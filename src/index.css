@@ -1,6 +1,7 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+  text-align: center;
 }
 
 /* Product Wrapper */
@@ -76,4 +77,16 @@
   .container img {
     max-height: 150px;
   }
+}
+.display{
+  display: flex;
+  
+}
+.navbar1{
+  animation: mymove 5s infinite;
+  position: relative;
+}
+@keyframes mymove {
+  0%   {left: 0px;}
+  100% {left: 50px;}
 }
