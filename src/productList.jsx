@@ -260,8 +260,8 @@ function handleDelete(id)
     const updatedList=products.filter((product)=>product.id != id)
     setproducts(updatedList);
 }
-    const ser=products.filter((item)=>item.price>10000)
-    const productsItemList=ser.map((item) => (
+    //const ser=products.filter((item)=>item.price>10000)
+    const productsItemList=products.map((item) => (
                 <Content
                     id={item.id}
                     image={item.image}
