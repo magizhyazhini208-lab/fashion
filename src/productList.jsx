@@ -249,14 +249,22 @@ function ProductList()
         rating:"4.2"
     }
 ]
-        const ProductItem=products.map(
-            (item)=>
-            <Content key={item.id} image={item.image} name={item.name} color={item.color} price={item.price}
-            offer={item.offer} offerper={item.offerper} rating={item.rating}/>
-        )
     return(
         <>
-        {ProductItem}
+         <div className="product-grid">
+            {products.map((item, index) => (
+                <Content
+                    key={index}
+                    image={item.image}
+                    name={item.name}
+                    color={item.color}
+                    price={item.price}
+                    offer={item.offer}
+                    offerper={item.offerper}
+                    rating={item.rating}
+                />
+            ))}
+        </div>
         </>
     );
 }
