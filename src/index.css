@@ -1,0 +1,107 @@
+*{
+  font-family: sans-serif;
+}
+
+.container{
+  border: 1px solid black;
+  margin: 10px;
+  width: 30vw;
+  height: 50vh;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+.container:hover button{
+  background-color: green;
+  border-left: 10px solid black;
+  border-right:0px;
+}
+.container:hover
+{
+  background-color:antiquewhite;
+  border: 2px solid black;
+}
+.container img{
+  width:15vw;
+  height:15vh;
+  padding: 5px;
+}
+
+.container button{
+  width:7vw;
+  height:5vh;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: white;
+  background-color: royalblue;
+  border-right: 10px solid black;
+}
+.container button:hover{
+  background-color: green;
+  border-left: 10px solid black;
+  border-right:0px;
+  transition: 3ms;
+}
+.strike{
+  text-decoration:line-through;
+}
+/* Full screen slider */
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Track: contains all slides horizontally */
+.slider-track {
+  display: flex;
+  width: calc(100px * 5); /* 5 images */
+  height: 100px;
+  animation: slide 10s infinite ease-in-out;
+  /* 5 images × 5s per image = 25s total */
+}
+
+/* Each slide uses full screen */
+.slide {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+/* Make image cover the whole screen */
+.slide img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Move one image every 5 seconds */
+@keyframes slide {
+
+  /* IMAGE 1 */
+  0%    { transform: translateX(0); }
+  16%   { transform: translateX(0); }
+
+  /* IMAGE 2 */
+  20%   { transform: translateX(100vw); }
+  36%   { transform: translateX(100vw); }
+
+  /* IMAGE 3 */
+  40%   { transform: translateX(200vw); }
+  56%   { transform: translateX(200vw); }
+
+  /* IMAGE 4 */
+  60%   { transform: translateX(300vw); }
+  76%   { transform: translateX(300vw); }
+
+  /* IMAGE 5 */
+  80%   { transform: translateX(400vw); }
+  100%  { transform: translateX(400vw); }
+}
+.Navbar
+{
+  text-align: center;
+}
